@@ -1,1 +1,1 @@
-pabot --processes 3 --outputdir Results Tests
+pabot --processes 3 -v browser:headlesschrome --outputdir Results Tests

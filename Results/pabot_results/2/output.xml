@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.7 on win32)" generated="2024-06-30T23:39:22.504685" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Robo_Frame_Projects\robo_test1\Tests">
+<suite id="s1-s1" name="Practoinsurance" source="D:\Robo_Frame_Projects\robo_test1\Tests\practoinsurance.robot">
+<test id="s1-s1-t1" name="TC_01 Validate group insurance check" line="8">
+<kw name="launch practo website" owner="practohome_key" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:22.987711" level="INFO">Opening browser 'chrome' to base url 'https://www.practo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-30T23:39:22.986885" elapsed="5.474442"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-30T23:39:28.462328" elapsed="0.041992"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:28.512833" level="INFO">${title} = Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-30T23:39:28.504320" elapsed="0.008513"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-30T23:39:28.512833" elapsed="0.001020"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:22.985851" elapsed="5.528002"/>
+</kw>
+<kw name="Click on groupinsurance plan" owner="practohome_key">
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:28.516778" elapsed="0.036037"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:28.553892" level="INFO">Clicking element 'css:span[event='Nav Provider Marketing:Interacted:Plus Corporate']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:28.552815" elapsed="0.073003"/>
+</kw>
+<arg>${corporate_ban}</arg>
+<status status="PASS" start="2024-06-30T23:39:28.514832" elapsed="0.111487"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:28.626319" elapsed="0.033318"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:28.660638" level="INFO">Clicking element 'xpath://a[@event='Nav Provider Marketing:Interacted:Plus Corporate' and normalize-space()='Group Insurance']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:28.660638" elapsed="5.522220"/>
+</kw>
+<arg>${group_ins_ban}</arg>
+<status status="PASS" start="2024-06-30T23:39:28.626319" elapsed="5.556539"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:28.513853" elapsed="5.669005"/>
+</kw>
+<kw name="close practo website" owner="practohome_key" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-06-30T23:39:34.183886" elapsed="6.196379"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:34.183886" elapsed="6.196379"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:22.984851" elapsed="17.395414"/>
+</test>
+<test id="s1-s1-t2" name="TC_02 Validate health insurance plans for corporates" line="11">
+<kw name="launch practo website" owner="practohome_key" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:40.382511" level="INFO">Opening browser 'chrome' to base url 'https://www.practo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-30T23:39:40.382269" elapsed="2.756665"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-30T23:39:43.138934" elapsed="0.028441"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:43.179378" level="INFO">${title} = Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-30T23:39:43.168355" elapsed="0.011023"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-30T23:39:43.179378" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:40.381266" elapsed="2.799125"/>
+</kw>
+<kw name="Click on healthinsurance plan" owner="practohome_key">
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:43.181387" elapsed="0.025186"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:43.207575" level="INFO">Clicking element 'css:span[event='Nav Provider Marketing:Interacted:Plus Corporate']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:43.206573" elapsed="0.087288"/>
+</kw>
+<arg>${corporate_ban}</arg>
+<status status="PASS" start="2024-06-30T23:39:43.180391" elapsed="0.114470"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:43.295860" elapsed="0.025002"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:43.321862" level="INFO">Clicking element 'xpath://a[@event='Nav Provider Marketing:Interacted:Plus Corporate' and normalize-space()='Health &amp; Wellness Plans']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:43.320862" elapsed="10.624787"/>
+</kw>
+<arg>${health_ins_ban}</arg>
+<status status="PASS" start="2024-06-30T23:39:43.294861" elapsed="10.651997"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:43.180391" elapsed="10.766467"/>
+</kw>
+<kw name="close practo website" owner="practohome_key" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-06-30T23:39:53.949859" elapsed="6.394878"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:53.947855" elapsed="6.397386"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:40.380265" elapsed="19.964976"/>
+</test>
+<status status="PASS" start="2024-06-30T23:39:22.530243" elapsed="37.814998"/>
+</suite>
+<status status="PASS" start="2024-06-30T23:39:22.515227" elapsed="37.831027"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Practoinsurance">Tests.Practoinsurance</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

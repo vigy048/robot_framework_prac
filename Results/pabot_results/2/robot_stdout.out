@@ -1,0 +1,18 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Practoinsurance                                                         
+==============================================================================
+TC_01 Validate group insurance check                                  Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests
+| PASS |
+------------------------------------------------------------------------------
+TC_02 Validate health insurance plans for corporates                  Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests
+| PASS |
+------------------------------------------------------------------------------
+Tests.Practoinsurance                                                 | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  D:\Robo_Frame_Projects\robo_test1\Results\pabot_results\2\output.xml

@@ -1,0 +1,42 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Practohome                                                              
+==============================================================================
+TC_01 Validate the Practo HomePage                                    Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests
+| PASS |
+------------------------------------------------------------------------------
+TC_02 Validate the location List                                      Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests
+Use my location
+Search in entire Udupi
+Use my location
+Search in entire Udupi
+Manipal
+Udupi
+Udupi
+Udupi
+Car Street
+Udupi
+Ambalapadi
+Udupi
+Padubidri
+Udupi
+Udupi Courts
+Udupi
+Shivalli
+Udupi
+Sasthan
+Udupi
+Santhekatte
+Udupi
+Parkala
+Udupi
+| PASS |
+------------------------------------------------------------------------------
+Tests.Practohome                                                      | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  D:\Robo_Frame_Projects\robo_test1\Results\pabot_results\1\output.xml

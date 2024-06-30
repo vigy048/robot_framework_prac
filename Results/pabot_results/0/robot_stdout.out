@@ -1,0 +1,21 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Practologin                                                             
+==============================================================================
+TC_01 Validate the Practo LoginPage                                   Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests
+| PASS |
+------------------------------------------------------------------------------
+TC_02 Check location                                                  Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests
+Hyderabad
+Bangalore
+Udupi
+| PASS |
+------------------------------------------------------------------------------
+Tests.Practologin                                                     | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  D:\Robo_Frame_Projects\robo_test1\Results\pabot_results\0\output.xml

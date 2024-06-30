@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.7 on win32)" generated="2024-06-30T23:39:22.504685" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Robo_Frame_Projects\robo_test1\Tests">
+<suite id="s1-s1" name="Practologin" source="D:\Robo_Frame_Projects\robo_test1\Tests\practologin.robot">
+<test id="s1-s1-t1" name="TC_01 Validate the Practo LoginPage" line="8">
+<kw name="launch practo website" owner="practohome_key" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:22.989672" level="INFO">Opening browser 'chrome' to base url 'https://www.practo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-30T23:39:22.989672" elapsed="2.140994"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-30T23:39:25.131165" elapsed="4.891481"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:30.027658" level="INFO">${title} = Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-30T23:39:30.023656" elapsed="0.004002"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-30T23:39:30.027658" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:22.988196" elapsed="7.040462"/>
+</kw>
+<kw name="perform sanity on practo homepage" owner="practohome_key">
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:30.030684" elapsed="0.023420"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:30.054104" level="INFO">Clicking element 'xpath://span[@class='practo-logo']//a[@event='Practo Logo:Interacted:Consumer Nav']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:30.054104" elapsed="1.068208"/>
+</kw>
+<arg>${practo_home_logo}</arg>
+<status status="PASS" start="2024-06-30T23:39:30.029654" elapsed="1.092658"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:31.123317" elapsed="0.028960"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:31.153374" level="INFO">Clicking element 'xpath://div[normalize-space()='Find Doctors']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:31.152277" elapsed="5.240065"/>
+</kw>
+<arg>${find_doctors_ban}</arg>
+<status status="PASS" start="2024-06-30T23:39:31.122312" elapsed="5.270667"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:36.395016" elapsed="0.036199"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:36.431215" level="INFO">Clicking element 'xpath://div[normalize-space()='Video Consult']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:36.431215" elapsed="1.152914"/>
+</kw>
+<arg>${video_consult_ban}</arg>
+<status status="PASS" start="2024-06-30T23:39:36.394019" elapsed="1.190613"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:37.585643" elapsed="0.029496"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:37.616284" level="INFO">Clicking element 'xpath://div[normalize-space()='Surgeries' and @class='product-tab__title']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:37.615139" elapsed="0.665069"/>
+</kw>
+<arg>${surgeries_ban}</arg>
+<status status="PASS" start="2024-06-30T23:39:37.584632" elapsed="0.696573"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:38.291801" level="INFO">Current page contains element 'xpath://a[@name='Practo login']'.</msg>
+<arg>${login_btn}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-06-30T23:39:38.281205" elapsed="0.010596"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:38.292803" elapsed="0.018242"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:38.312044" level="INFO">Clicking element 'css:span[event='Nav Provider Marketing:Interacted:Plus Corporate']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:38.311045" elapsed="0.068260"/>
+</kw>
+<arg>${corporate_ban}</arg>
+<status status="PASS" start="2024-06-30T23:39:38.291801" elapsed="0.087504"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:38.379807" elapsed="0.035594"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:38.416508" level="INFO">Clicking element 'xpath://span[normalize-space()='For Providers']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:38.415401" elapsed="0.053264"/>
+</kw>
+<arg>${provider_ban}</arg>
+<status status="PASS" start="2024-06-30T23:39:38.379807" elapsed="0.088858"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:38.469726" elapsed="0.087701"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:38.558429" level="INFO">Clicking element 'xpath://span[normalize-space()='Security &amp; help']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:38.558429" elapsed="0.040478"/>
+</kw>
+<arg>${security_ban}</arg>
+<status status="PASS" start="2024-06-30T23:39:38.469726" elapsed="0.129181"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:38.599958" elapsed="0.018293"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:38.619276" level="INFO">Clicking element 'xpath://span[@class='practo-logo']//a[@event='Practo Logo:Interacted:Consumer Nav']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:38.618251" elapsed="0.899918"/>
+</kw>
+<arg>${practo_home_logo}</arg>
+<status status="PASS" start="2024-06-30T23:39:38.598907" elapsed="0.920280"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:39.521257" elapsed="0.029200"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:39.551441" level="INFO">Clicking element 'css:div.c-omni-searchbox_wrapper&gt;input[data-qa-id='omni-searchbox-keyword']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:39.551441" elapsed="0.099272"/>
+</kw>
+<arg>${doc_search_txt_box}</arg>
+<status status="PASS" start="2024-06-30T23:39:39.520279" elapsed="0.130434"/>
+</kw>
+<kw name="click once visible" owner="practohome_key">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>40</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-30T23:39:39.651715" elapsed="0.027524"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:39.679239" level="INFO">Clicking element 'css:input[data-qa-id='omni-searchbox-locality']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:39.679239" elapsed="0.068661"/>
+</kw>
+<arg>${location_box}</arg>
+<status status="PASS" start="2024-06-30T23:39:39.650713" elapsed="0.097729"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:30.028658" elapsed="9.719784"/>
+</kw>
+<kw name="close practo website" owner="practohome_key" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-06-30T23:39:39.749560" elapsed="6.236875"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:39.748442" elapsed="6.237993"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:22.986885" elapsed="22.999550"/>
+</test>
+<test id="s1-s1-t2" name="TC_02 Check location" line="11">
+<kw name="launch practo website" owner="practohome_key" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:45.992173" level="INFO">Opening browser 'chrome' to base url 'https://www.practo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-30T23:39:45.991176" elapsed="5.524330"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-30T23:39:51.515506" elapsed="0.041946"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:51.564488" level="INFO">${title} = Practo | Video Consultation with Doctors, Book Doctor Appointments, Order Medicine, Diagnostic Tests</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-06-30T23:39:51.557452" elapsed="0.007036"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-30T23:39:51.565587" elapsed="0.001076"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:45.990151" elapsed="5.576512"/>
+</kw>
+<kw name="Perform location check" owner="practohome_key">
+<kw name="Read values from excel" owner="practohome_key">
+<kw name="Open Excel Document" owner="ExcelLibrary">
+<arg>D:/Robo_Frame_Projects/robo_test1/Tests.xlsx</arg>
+<arg>my_excel</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" start="2024-06-30T23:39:51.568618" elapsed="0.004267"/>
+</kw>
+<kw name="Read Excel Cell" owner="ExcelLibrary">
+<msg time="2024-06-30T23:39:51.573872" level="INFO">${cell_value} = Hyderabad</msg>
+<var>${cell_value}</var>
+<arg>${row_num}</arg>
+<arg>${col_num}</arg>
+<doc>Returns content of a cell.</doc>
+<status status="PASS" start="2024-06-30T23:39:51.572885" elapsed="0.000987"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${cell_value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-30T23:39:51.573872" elapsed="0.000000"/>
+</kw>
+<kw name="Close Current Excel Document" owner="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" start="2024-06-30T23:39:51.573872" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${cell_value}</value>
+<status status="PASS" start="2024-06-30T23:39:51.574795" elapsed="0.000000"/>
+</return>
+<msg time="2024-06-30T23:39:51.574795" level="INFO">${city} = Hyderabad</msg>
+<var>${city}</var>
+<arg>2</arg>
+<arg>1</arg>
+<status status="PASS" start="2024-06-30T23:39:51.567589" elapsed="0.007206"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:51.575690" level="INFO">Typing text 'Hyderabad' into text field 'css:input[data-qa-id='omni-searchbox-locality']'.</msg>
+<arg>${location_box}</arg>
+<arg>${city}</arg>
+<arg>True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:51.574795" elapsed="0.197217"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-30T23:39:56.782209" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-30T23:39:51.772670" elapsed="5.009539"/>
+</kw>
+<kw name="Read values from excel" owner="practohome_key">
+<kw name="Open Excel Document" owner="ExcelLibrary">
+<arg>D:/Robo_Frame_Projects/robo_test1/Tests.xlsx</arg>
+<arg>my_excel</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" start="2024-06-30T23:39:56.784298" elapsed="0.009956"/>
+</kw>
+<kw name="Read Excel Cell" owner="ExcelLibrary">
+<msg time="2024-06-30T23:39:56.795231" level="INFO">${cell_value} = Bangalore</msg>
+<var>${cell_value}</var>
+<arg>${row_num}</arg>
+<arg>${col_num}</arg>
+<doc>Returns content of a cell.</doc>
+<status status="PASS" start="2024-06-30T23:39:56.794254" elapsed="0.000977"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${cell_value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-30T23:39:56.796310" elapsed="0.000000"/>
+</kw>
+<kw name="Close Current Excel Document" owner="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" start="2024-06-30T23:39:56.797299" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${cell_value}</value>
+<status status="PASS" start="2024-06-30T23:39:56.797299" elapsed="0.000000"/>
+</return>
+<msg time="2024-06-30T23:39:56.798300" level="INFO">${city} = Bangalore</msg>
+<var>${city}</var>
+<arg>3</arg>
+<arg>1</arg>
+<status status="PASS" start="2024-06-30T23:39:56.783304" elapsed="0.014996"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:39:56.799306" level="INFO">Typing text 'Bangalore' into text field 'css:input[data-qa-id='omni-searchbox-locality']'.</msg>
+<arg>${location_box}</arg>
+<arg>${city}</arg>
+<arg>True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:39:56.798300" elapsed="0.105535"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-30T23:40:01.911560" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-30T23:39:56.903835" elapsed="5.007725"/>
+</kw>
+<kw name="Read values from excel" owner="practohome_key">
+<kw name="Open Excel Document" owner="ExcelLibrary">
+<arg>D:/Robo_Frame_Projects/robo_test1/Tests.xlsx</arg>
+<arg>my_excel</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" start="2024-06-30T23:40:01.912562" elapsed="0.010999"/>
+</kw>
+<kw name="Read Excel Cell" owner="ExcelLibrary">
+<msg time="2024-06-30T23:40:01.925520" level="INFO">${cell_value} = Udupi</msg>
+<var>${cell_value}</var>
+<arg>${row_num}</arg>
+<arg>${col_num}</arg>
+<doc>Returns content of a cell.</doc>
+<status status="PASS" start="2024-06-30T23:40:01.924572" elapsed="0.000948"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${cell_value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-30T23:40:01.926475" elapsed="0.001088"/>
+</kw>
+<kw name="Close Current Excel Document" owner="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" start="2024-06-30T23:40:01.927563" elapsed="0.001010"/>
+</kw>
+<return>
+<value>${cell_value}</value>
+<status status="PASS" start="2024-06-30T23:40:01.928573" elapsed="0.000000"/>
+</return>
+<msg time="2024-06-30T23:40:01.928573" level="INFO">${city} = Udupi</msg>
+<var>${city}</var>
+<arg>4</arg>
+<arg>1</arg>
+<status status="PASS" start="2024-06-30T23:40:01.911560" elapsed="0.018006"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-30T23:40:01.930577" level="INFO">Typing text 'Udupi' into text field 'css:input[data-qa-id='omni-searchbox-locality']'.</msg>
+<arg>${location_box}</arg>
+<arg>${city}</arg>
+<arg>True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-30T23:40:01.929566" elapsed="0.100744"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-30T23:40:07.041049" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-30T23:40:02.030310" elapsed="5.010739"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:51.567589" elapsed="15.473460"/>
+</kw>
+<kw name="close practo website" owner="practohome_key" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-06-30T23:40:07.044144" elapsed="6.259220"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:40:07.042140" elapsed="6.261224"/>
+</kw>
+<status status="PASS" start="2024-06-30T23:39:45.987432" elapsed="27.315932"/>
+</test>
+<status status="PASS" start="2024-06-30T23:39:22.531243" elapsed="50.773180"/>
+</suite>
+<status status="PASS" start="2024-06-30T23:39:22.515227" elapsed="50.791210"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Practologin">Tests.Practologin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
